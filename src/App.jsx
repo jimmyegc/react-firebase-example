@@ -10,6 +10,7 @@ function App() {
 
   onAuthStateChanged(auth, userFirebase => {
     if (userFirebase) {
+      // console.log(userFirebase)
       setUser(userFirebase)
     } else {
       setUser(null)
