@@ -13,7 +13,9 @@ export const TodoCard = ({ todo, setSelectedTodo, refreshAllTodos }) => {
   }
 
   return (<>
-    <div className="flex flex-row justify-around border-2 border-slate-500 p-10 my-4 shadow-md">
+    <div className="flex flex-row justify-around border-2 border-slate-500 p-10 my-4 shadow-md"
+      key={todo.id}
+    >
       <h3>Priority</h3>
       <p>{todo.priority}</p>
       <div>

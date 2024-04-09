@@ -54,5 +54,14 @@ export const TodoForm = ({ refreshAllTodos }) => {
         font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
       >Add</button>
     </form>
+    <button
+      className='bg-slate-700 text-white'
+      onClick={() => {
+        const modal = document.querySelector('#search-modal')
+        modal.showModal()
+      }}
+    >
+      Search
+    </button>
   </>)
 }

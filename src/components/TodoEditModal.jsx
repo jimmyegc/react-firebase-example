@@ -7,7 +7,7 @@ export const TodoEditModal = ({ todo, refreshAllTodos }) => {
 
   useEffect(() => {
     setTodoEdit(todo)
-    console.log(todo)
+    // console.log(todo)
   }, [todo])
 
   const handleSubmit = (e) => {

@@ -11,7 +11,7 @@ export const getAllTodos = async () => {
         ...d.data()    
       }
     })
-    console.log("getAllTodos", docs)
+    // console.log("getAllTodos", docs)
     return docs 
   } catch(error) {
     console.log(error)
