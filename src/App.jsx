@@ -3,6 +3,7 @@ import { Home } from './views/Home'
 import { Login } from './views/Login'
 import { auth } from './firebase/credentials'
 import { onAuthStateChanged } from 'firebase/auth'
+import { UploadFile } from './views/UploadFile'
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
 
   return (
     <>
-      {user ? <Home user={user} /> : <Login setUser={setUser} />}
+      <UploadFile />
+      {/*  {user ? <Home user={user} /> : <Login setUser={setUser} />}
+ */}
     </>
   )
 }
